@@ -1,0 +1,27 @@
+.breadcrumbWrap {
+	width: 100%;
+	display: flex;
+	flex-shrink: 0;
+	height: 115px;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	padding: 16px 25px;
+
+	.titleAndBtns {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.title {
+		font-family: Source Han Sans CN;
+		font-size: 20px;
+		font-weight: normal;
+		font-stretch: normal;
+		line-height: 68px;
+		letter-spacing: 0px;
+		color: #2b2b2b;
+	}
+}

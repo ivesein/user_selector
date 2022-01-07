@@ -1,0 +1,207 @@
+.loginPage {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-end;
+	background-color: rgb(249, 251, 254);
+	background-image: url(../../asset/img/login_bg.png);
+	background-repeat: no-repeat;
+	background-position: 20% center;
+	padding-right: 244px;
+	padding-left: 244px;
+	min-width: 800px;
+
+	min-height: 830px;
+	overflow: hidden;
+
+	.loginFormWrap {
+		width: 480px;
+		height: 635px;
+		display: flex;
+		flex-shrink: 0;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+		padding: 100px 45px;
+		background-color: #fff;
+		border-radius: 8px;
+
+		.title {
+			font-family: Source Han Sans CN;
+			font-size: 28px;
+			font-weight: normal;
+			font-stretch: normal;
+			line-height: 68px;
+			letter-spacing: 0px;
+			color: #2b2b2b;
+			margin-bottom: 98px;
+		}
+
+		.formItemWrap {
+			position: relative;
+			margin-bottom: 24px;
+			.formItemInput {
+				width: 100%;
+				height: 48px;
+				display: flex;
+				justify-content: flex-start;
+				align-items: center;
+				background-color: #f9fbfe;
+				border-radius: 2px;
+				border: solid 1px #e6e6e6;
+			}
+
+			.formItemInputPassword {
+				width: 100%;
+				height: 48px;
+				display: flex;
+				justify-content: flex-start;
+				align-items: center;
+				background-color: #f9fbfe;
+				border-radius: 2px;
+				border: solid 1px #e6e6e6;
+				padding-right: 105px;
+			}
+			.cusSuffix {
+				position: absolute;
+				top: 12px;
+				right: 0;
+				padding: 0 15px;
+				font-size: 14px;
+				color: #b4b4b4;
+				z-index: 999;
+				margin-left: 10px;
+				cursor: pointer;
+				&:hover {
+					color: #245ff2;
+				}
+			}
+		}
+		.cusBtn {
+			height: 56px;
+			background-color: #245ff2;
+			border-radius: 2px;
+			font-size: 16px;
+			color: #fff;
+			margin-top: 20px;
+		}
+	}
+
+	.unitListWrap {
+		width: 480px;
+		height: 635px;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+		padding: 24px;
+		background-color: #fff;
+		border-radius: 8px;
+
+		.goBack {
+			font-family: SourceHanSansCN-Regular;
+			font-size: 14px;
+			font-weight: normal;
+			font-stretch: normal;
+			line-height: 58px;
+			letter-spacing: 0px;
+			color: #999999;
+			cursor: pointer;
+			&:hover {
+				color: #245ff2;
+			}
+		}
+
+		.titleWrap {
+			width: 100%;
+			height: 168px;
+			display: flex;
+			flex-shrink: 0;
+			flex-direction: column;
+			justify-content: flex-start;
+			align-items: stretch;
+			padding: 10px 20px 56px 20px;
+
+			.title {
+				font-size: 24px;
+				font-weight: normal;
+				font-stretch: normal;
+				line-height: 58px;
+				letter-spacing: 0px;
+				color: #2b2b2b;
+			}
+
+			.subTitle {
+				font-size: 14px;
+				font-weight: normal;
+				font-stretch: normal;
+				line-height: 34px;
+				letter-spacing: 0px;
+				color: #b4b4b4;
+			}
+		}
+
+		.unitItemWrap {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			align-items: stretch;
+			flex: 1;
+			flex-shrink: 0;
+			padding: 0 16px;
+			overflow-y: auto;
+
+			.unitItem {
+				width: 100%;
+				height: 64px;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				padding: 0 20px;
+				padding-right: 70px;
+				flex-shrink: 0;
+				background-color: #f7f7f7;
+				margin-bottom: 8px;
+				&:hover {
+					cursor: pointer;
+					color: #245ff2;
+				}
+
+				.unitName {
+					display: flex;
+					flex: 1;
+					margin-left: 24px;
+					font-size: 14px;
+					color: #2b2b2b;
+					&:hover {
+						cursor: pointer;
+						color: #245ff2;
+					}
+				}
+			}
+		}
+	}
+
+	:global {
+		.ant-form-item {
+			margin-bottom: 0;
+		}
+	}
+
+	.goBack {
+		width: 100%;
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		font-size: 14px;
+		color: #2b2b2b;
+
+		span {
+			color: #245ff2;
+			cursor: pointer;
+		}
+	}
+}

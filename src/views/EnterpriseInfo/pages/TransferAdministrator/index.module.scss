@@ -1,0 +1,97 @@
+.transferAdmin {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: stretch;
+	overflow: hidden;
+	background-color: #fff;
+
+	.content {
+		width: 100%;
+		display: flex;
+		flex: 1;
+		flex-shrink: 0;
+		padding: 24px;
+		background-color: #f7f7f7;
+		overflow: hidden;
+
+		.transferWrap {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			align-items: stretch;
+			flex: 1;
+			flex-shrink: 0;
+			padding: 24px;
+			padding-top: 0;
+			background-color: #fff;
+			overflow: hidden;
+			.titleWrap {
+				width: 100%;
+				height: 76px;
+				display: flex;
+				flex-shrink: 0;
+				justify-content: space-between;
+				align-items: center;
+
+				.filterSelectWrap {
+					.title {
+						font-size: 14px;
+						color: #b4b4b4;
+					}
+					display: flex;
+					justify-content: flex-start;
+					align-items: center;
+					width: 200px;
+					height: 40px;
+					flex-shrink: 0;
+					border: 1px solid rgba(51, 51, 51, 0.1);
+					padding-left: 10px;
+				}
+			}
+
+			.tableWrap {
+				display: flex;
+				width: 100%;
+				flex: 1;
+				flex-shrink: 0;
+			}
+
+			.AvatarOrNameCell {
+				width: 100%;
+				height: 100%;
+				padding: 0;
+			}
+		}
+	}
+
+	.avatarAndNameTagWrap {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		.creatorTag {
+			background-color: #f0faf2;
+			border: 1px solid #86d65f;
+			padding: 0 8px;
+			margin-left: 8px;
+			line-height: 22px;
+			font-size: 12px;
+			color: #86d65f;
+		}
+
+		.adminTag {
+			background-color: #eff3ff;
+			border: 1px solid #245ff2;
+			padding: 0 8px;
+			margin-left: 8px;
+			line-height: 22px;
+			font-size: 12px;
+			color: #245ff2;
+		}
+	}
+}

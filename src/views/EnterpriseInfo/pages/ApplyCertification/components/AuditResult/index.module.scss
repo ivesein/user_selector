@@ -1,0 +1,25 @@
+.auditResult {
+	width: 100%;
+	padding: 64px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+
+	.icon {
+		width: 120px;
+		margin-bottom: 25px;
+	}
+
+	.title {
+		font-size: 16px;
+		color: #333;
+		margin-bottom: 4px;
+	}
+
+	.tip {
+		font-size: 12px;
+		color: #666;
+		margin-bottom: 40px;
+	}
+}

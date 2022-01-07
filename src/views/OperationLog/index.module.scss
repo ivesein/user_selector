@@ -1,0 +1,73 @@
+.title {
+    height: 68px;
+    background-color: #fff;
+    padding: 24px;
+    font-size: 20px;
+    color: #2b2b22;
+    display: block;
+}
+
+.LogMain {
+    height: calc(100% - 68px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    padding: 24px;
+
+    .top {
+        background-color: #fff;
+        padding: 20px 24px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .tab {
+            >span {
+                width: 80px;
+                height: 40px;
+                background-color: #fff;
+                font-size: 14px;
+                display: inline-block;
+                text-align: center;
+                line-height: 38px;
+                box-sizing: border-box;
+                cursor: pointer;
+                transition: .3s;
+            }
+        }
+
+        .active {
+            border: 1px solid #245ff2;
+            color: #245ff2;
+        }
+
+        .none {
+            border: 1px solid #e6e6e6;
+            color: #999;
+        }
+    }
+
+    .content {
+        height: calc(100% - 80px);
+        background-color: #fff;
+        padding: 8px 24px 24px;
+        font-size: 14px;
+        color: #666;
+
+        .log {
+            height: calc(100% - 70px);
+
+            span {
+                display: block;
+                margin-bottom: 24px;
+            }
+        }
+
+        .paginationWrap {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+    }
+}

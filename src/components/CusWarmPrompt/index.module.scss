@@ -1,0 +1,48 @@
+.warmPrompt {
+	pointer-events: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: stretch;
+	background-color: #fff;
+
+	.title {
+		height: 60px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0 20px;
+		font-size: 16px;
+		color: #2b2b2b;
+		background-color: rgba(85, 130, 243, 0.08);
+
+		.closeIcon {
+			cursor: pointer;
+		}
+	}
+
+	.content {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+		padding: 30px 0 20px 0;
+
+		.typeIcon {
+			width: 64px;
+			margin-bottom: 10px;
+		}
+
+		.infoSpans {
+			font-size: 14px;
+			color: #777;
+		}
+	}
+
+	.footer {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 90px;
+	}
+}

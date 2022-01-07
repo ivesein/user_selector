@@ -1,0 +1,20 @@
+.cusFormItemUpload {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+
+	.previewImg {
+		overflow: hidden;
+		width: 190px;
+		height: 120px;
+		margin-bottom: 8px;
+	}
+
+	.tip {
+		max-width: 520px;
+		font-size: 12px;
+		margin-top: 16px;
+		color: #b4b4b4;
+	}
+}

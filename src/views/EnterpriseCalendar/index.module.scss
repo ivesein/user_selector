@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box {
+    width: 100%;
+    height: 100%;
+    min-width: 1470px;
+    // min-height: calc(100% - 64px);
+    padding: 10px;
+    overflow: auto;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+
+    .header {
+        // height: 60px;
+        padding: 5px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border: 1px solid #eee;
+    }
+
+    .container {
+        flex: 1;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        margin-top: 10px;
+        border: 1px solid #eee;
+
+        .leftcalendar {
+            width: 520px;
+            // padding: 10px;
+
+            .card {
+                width: 480px;
+                padding: 10px 10px 0;
+                margin: 0 auto;
+                border: 1px solid #f0f0f0;
+                border-radius: 6px;
+
+                .calendarStyle {
+                    width: 60px;
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    margin: 2px;
+                    border-radius: 6px;
+                    padding: 3px;
+
+                    .topDay {
+                        font-size: 18px;
+                    }
+
+                    .holiday {
+                        position: absolute;
+                        top: 1px;
+                        right: 2px;
+                        font-size: 10px;
+                    }
+                }
+
+                .workStyle {
+                    background-color: #fff;
+                }
+
+                .nowStyle {
+                    background-color: #f5f5f6;
+                }
+
+                .restStyle {
+                    // background-color: #e98b8b;
+                    background-color: #f7313126;
+                }
+
+                .calendarStyle:hover {
+                    background-color: #f5f5f6;
+                    // border: 1px solid #f0f0f0;
+                    border-radius: 6px;
+                }
+            }
+
+            .dayShow {
+                width: 480px;
+                height: 60px;
+                padding: 10px;
+                margin: 10px auto;
+                border: 1px solid #f0f0f0;
+                border-radius: 6px;
+                display: flex;
+                flex-direction: column;
+
+                .lunarCalendar {
+                    font-size: 16px;
+                    font-weight: 800;
+                    margin-bottom: 10px;
+                }
+                .chineseCalendar {
+                    font-size: 14px;
+                    font-weight: 500;
+                }
+            }
+
+            .exc {
+                width: 480px;
+                padding: 10px;
+                margin-left: 20px;
+                display: flex;
+                border: 1px solid #f0f0f0;
+                border-radius: 6px;
+
+                .timeStyle {
+                    width: 400px;
+                }
+
+                .tuliStyle {
+                    width: 80px;
+                }
+            }
+
+            .footer {
+                width: 480px;
+                height: 50px;
+                padding: 10px;
+                margin: 10px 0 0 20px;
+                display: flex;
+                align-items: center;
+                border: 1px solid #f0f0f0;
+                border-radius: 6px;
+                // padding: 5px 20px;
+            }
+        }
+
+        .righttable {
+            flex: 1;
+            padding: 0 20px 20px;
+            border-left: 1px solid #eee;
+            overflow: auto;
+        }
+    }
+}

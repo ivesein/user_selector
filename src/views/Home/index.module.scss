@@ -1,0 +1,50 @@
+.homePage {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: stretch;
+	overflow: hidden;
+
+	.headerWrap {
+		width: 100%;
+		height: 64px;
+	}
+
+	.content {
+		display: flex;
+		width: 100%;
+		flex: 1;
+		justify-content: flex-start;
+		align-items: flex-start;
+		flex-shrink: 0;
+		overflow: hidden;
+
+		.leftBox {
+			width: 200px;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			align-items: center;
+			overflow: hidden;
+			box-shadow: 1px 0px 0px 0px #e6e6e6;
+			padding: 20px 0;
+
+			.menuDivider {
+				width: 144px;
+				height: 0px;
+				border-bottom: 1px solid #e6e6e6;
+				margin: 10px 0;
+			}
+		}
+
+		.rightBox {
+			width: calc(100% - 200px);
+			overflow: hidden;
+			height: 100%;
+			background: #f7f7f7;
+		}
+	}
+}

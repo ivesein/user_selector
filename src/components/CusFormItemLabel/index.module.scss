@@ -1,0 +1,30 @@
+.cusFormItemLabel {
+	width: 100%;
+	// width: 90px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	// padding-left: 6px;
+	line-height: 16px;
+
+	.labelText {
+		// max-width: 56px;
+		font-size: 14px;
+		color: #666666;
+		white-space: break-spaces;
+	}
+	.requiredmarkWrap {
+		width: 26px;
+		display: flex;
+		// flex: 1;
+		justify-content: flex-start;
+		align-items: center;
+		padding-left: 4px;
+		// margin-right: 5px;
+
+		.labelRequiredMark {
+			width: 15px;
+			height: 15px;
+		}
+	}
+}

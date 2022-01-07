@@ -1,0 +1,74 @@
+.RolePermission {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: stretch;
+	background-color: #f7f7f7;
+	padding: 24px;
+
+	.controlBar {
+		width: 100%;
+		height: 80px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 24px;
+		background-color: #fff;
+	}
+
+	.tableWrap {
+		width: 100%;
+		display: flex;
+		flex: 1;
+		background-color: #fff;
+		overflow: hidden;
+		padding: 0 24px;
+	}
+
+	.paginationWrap {
+		// height: 45px;
+		width: 100%;
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		padding: 10px 24px;
+		background-color: #fff;
+	}
+
+	.cusBtn {
+		font-size: 14px;
+		height: 40px;
+	}
+
+	.roleNameWrap {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		color: #666;
+		font-size: 14px;
+
+		img {
+			height: 16px;
+			margin-right: 14px;
+		}
+
+		.cellSpan {
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+		}
+	}
+
+	.cusColumnStyle {
+		color: #666;
+		font-size: 14px;
+	}
+
+	.searchItemWrap {
+		display: flex;
+	}
+}

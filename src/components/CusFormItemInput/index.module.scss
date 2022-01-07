@@ -1,0 +1,19 @@
+.cusFormItemTextAear {
+	position: relative;
+	height: 40px;
+
+	.lengthRemaining {
+		position: absolute;
+		bottom: 5px;
+		right: 10px;
+		font-size: 14px;
+		color: #999;
+	}
+
+	:global {
+		.ant-input-lg {
+			font-size: 14px;
+			color: #2b2b2b;
+		}
+	}
+}

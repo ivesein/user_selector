@@ -1,0 +1,40 @@
+.member-page-wrap {
+	.ant-tree-list-holder-inner {
+		.ant-tree-treenode {
+			width: 100% !important;
+			justify-content: flex-start !important;
+			align-items: center !important;
+
+			.ant-tree-switcher {
+				line-height: 32px;
+			}
+
+			.ant-tree-switcher-noop {
+				svg {
+					display: none;
+				}
+			}
+		}
+
+		.ant-tree-treenode-selected {
+			//   background-color: #eef2fe;
+
+			.ant-tree-switcher {
+				// background-color: #eef2fe;
+			}
+			.ant-tree-switcher-noop {
+				// background-color: #eef2fe;
+			}
+			.ant-tree-node-selected {
+				background-color: #eef2fe;
+			}
+		}
+
+		.ant-tree-node-content-wrapper:hover {
+			background-color: #eef2fe;
+		}
+	}
+}
+.ant-tabs-content {
+	height: 100% !important;
+}

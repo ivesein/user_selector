@@ -1,0 +1,573 @@
+.startMainArea {
+    width: 680px;
+    margin: 0 0 0 20px;
+    font-size: 14px;
+    text-align: center;
+
+    .itemArea {
+        display: flex;
+        position: relative;
+        height: 80px;
+        align-items: center;
+
+        .avatarArea {
+            width: 32px;
+            height: 32px;
+            margin-right: 10px;
+
+            .bgParent {
+                background: transparent;
+                width: 32px;
+            }
+        }
+
+        .nodeArea {
+            border-bottom: 1px solid #dcdee0;
+            display: flex;
+            align-items: center;
+            height: 100%;
+            flex: 1;
+
+            .descArea {
+                line-height: 20px;
+                flex: 1;
+                text-align: left;
+
+                .nodeName {
+                    color: #2b2b2b;
+                }
+
+                .subTitle {
+                    color: #b4b4b4;
+                    width: 130px !important;
+                    @extend .text-ellipsis;
+                }
+            }
+        }
+
+        .divideLine {
+            position: absolute;
+            width: 1px;
+            left: 15px;
+            background: #dcdee0;
+        }
+    }
+}
+
+.noDataArea {
+    width: 680px;
+    height: 400px;
+    text-align: center;
+    padding-top: 190px;
+    font-size: 14px;
+    color: #999;
+}
+
+.avatarGroupArea {
+    width: 480px;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+
+
+    .groupItemArea,
+    .groupItemAllArea,
+    .groupItemOrArea,
+    .groupItemAndArea {
+        width: 50px;
+        text-align: center;
+        font-size: 12px;
+        margin-right: 10px;
+        line-height: 20px;
+        position: relative;
+
+        .name {
+            color: #999;
+            @extend .text-ellipsis;
+        }
+
+        &:last-child {
+            margin-right: 0;
+
+            &:after {
+                content: "";
+            }
+        }
+
+        &:after {
+            position: absolute;
+            left: 50px;
+            top: 10px;
+            color: #999;
+        }
+        
+        .selectBorderArea {
+            width: 50px;
+            margin-top: 2px;
+
+            .selectBorder {
+                width: 34px;
+                height: 34px;
+                border: 1px dashed #245ff2;
+                border-radius: 50%;
+                cursor: pointer;
+                color: #245ff2;
+                font-size: 20px;
+                margin: 0 auto;
+                position: relative;
+
+                .plusArea {
+                    position: absolute;
+                    top: 4px;
+                    left: 9px;
+                }
+            }
+        }
+    }
+
+    .groupItemAndArea {
+        &:after {
+            content: "+";
+            font-size: 20px;
+        }
+    }
+
+    .groupItemOrArea {
+        &:after {
+            content: "/";
+            font-size: 14px;
+        }
+    }
+
+    .groupItemAllArea {
+        &:after {
+            content: ">";
+            font-size: 16px;
+        }
+    }
+}
+
+.userModalArea {
+
+    .title {
+        color: #777777;
+        font-size: 14px;
+        margin: 0 0 20px 0;
+    }
+
+    .avatarGroupArea {
+        width: 100%;
+        justify-content: flex-start;
+
+        .groupItemArea,
+        .groupItemAllArea,
+        .groupItemOrArea,
+        .groupItemAndArea {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.outerMainArea {
+    margin-top: 10px;
+    font-size: 14px;
+    width: 700px;
+
+    .mainTitleArea {
+        padding-left: 28px;
+        color: #2b2b2b;
+    }
+
+    .detailMainArea {
+        width: 680px;
+        padding: 40px 0 0 40px;
+        min-height: 220px;
+    
+        .nodeAvatarArea {
+            position: relative;
+    
+            .nodeStatusArea {
+                position: absolute;
+                bottom: -5px;
+                right: -3px;
+            }
+        }
+    
+        .nodeContentArea {
+            padding-left: 20px;
+            
+            .nodeContent {
+                padding-bottom: 10px;
+                border-bottom: 1px solid #dcdee0;
+    
+                .mainTitle {
+                    color: #2b2b2b;
+    
+                    .overTime {
+                        color: #df4545;
+                        margin-left: 10px;
+                    }   
+    
+                    .unOverTime {
+                        color: #999999;
+                        margin-left: 10px;
+                    }
+                }
+        
+                .subTitle {
+                    color: #b4b4b4;
+                    display: flex;
+        
+                    .leftTitle {
+                        flex: 1;
+                    }
+        
+                    .rightTitle {
+                        text-align: right;
+                        width: 220px;
+                    }
+                }
+    
+                .commentArea {
+                    margin-top: 20px;
+    
+                    .commentItemArea {
+                        margin-bottom: 20px;
+    
+                        .avatarArea {
+                            width: 50px;
+                            text-align: center;
+                            position: relative;
+    
+                            .statusArea {
+                                position: absolute;
+                                bottom: -10px;
+                                right: 7px;
+                            }
+                        }
+    
+                        .nameTitle {
+                            display: flex;
+                            color: #b4b4b4;
+    
+                            .leftTitle {
+                                width: 54px !important;
+                                @extend .text-ellipsis;
+                                text-align: center;
+                            }
+    
+                            .rightTitle {
+                                text-align: right;
+                                flex: 1;
+                            }
+                        }
+    
+                        .commentDescArea {
+                            background: rgba(153, 153, 153, 0.1);
+                            width: 100%;
+                            padding: 10px;
+                            color: #666666;
+                            margin-top: 10px;
+                        }
+                    }
+                }
+    
+                .waitArea {
+                    margin-top: 20px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    color: #b4b4b4;
+                    position: relative;
+                    padding-top: 20px;
+    
+                    .waitUserItem {
+                        width: 54px;
+                        margin: 0 17px 15px 0;
+    
+                        &:last-child {
+                            margin-right: 0;
+                        }
+    
+                        .avatarArea {
+                            position: relative;
+                            text-align: center;
+    
+                            .statusArea {
+                                position: absolute;
+                                bottom: -10px;
+                                right: 7px;
+                            }
+                        }
+    
+                        .nameArea {
+                            text-align: center;
+                            @extend .text-ellipsis;
+                        }
+    
+    
+                    }
+
+                    .waitTextArea {
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                        color: #f1883d;
+                    }
+                }
+            }
+        }
+    }
+
+    .bottomAppHandleArea {
+        padding: 40px 0 0 20px;
+        display: flex;
+        width: 680px;
+        // border-top: 1px solid #e6e6e6;
+
+        .btnItem {
+            width: 100px;
+            height: 48px;
+        }
+
+        .leftHandArea {
+            width: 200px;
+        }
+
+        .rightHandArea {
+            flex: 1;
+            text-align: right;
+
+            .rejectBtn {
+                background: #ed6a2814;
+                border: #ed6a2814;
+                color: #ed6a28;
+            }
+        }
+    }
+}
+
+.btnItemHandle {
+    width: 100px;
+    height: 48px;
+}
+
+.hoverBtnHandle {
+    border: none;
+
+    &:hover {
+        background: #eef2fe;
+    }
+}
+
+.selectUserMainArea {
+    padding: 15px;
+    // border-bottom: 1px solid #e6e6e6;
+    font-size: 14px;
+
+    .selectColArea {
+
+        .mainTitleArea {
+
+            .hasSelect {
+                margin-left: 10px;
+                color: #999999;
+            }
+        }
+    
+        .selectBorderOuterArea {
+            padding-right: 30px; 
+            margin: 10px 0;
+    
+            .selectBorderArea {
+                border: 1px solid rgba(51, 51, 51, 0.1);
+                height: 520px;
+                overflow: auto;
+
+                // 滚动条样式
+                &::-webkit-scrollbar {
+                    width: 6px;
+                    height: 10px;
+                }
+                &::-webkit-scrollbar-track {
+                    background: #eef2fe;
+                    border-radius: 0px;
+                }
+                &::-webkit-scrollbar-thumb {
+                    background: #b3b3b3;
+                    border-radius: 0px;
+                }
+                &::-webkit-scrollbar-thumb:hover {
+                    background: #b3b3b3;
+                }
+                &::-webkit-scrollbar-corner {
+                    background: #b3b3b3;
+                }
+    
+                .allSelectHandleArea {
+                    padding: 15px 20px;
+                    border-bottom: 1px solid #e6e6e6;
+                }
+
+                .selectUserOuterArea {
+                    padding: 15px 20px;
+
+                    .searchUserArea {
+
+                        .searchInputArea {
+                            height: 40px;
+                        }
+
+                        .searchIcon {
+                            cursor: pointer;
+                            color: #b4b4b4;
+                            font-size: 20px;
+                        }
+                    }
+
+                    .orgAndUserArea {
+                        padding: 15px 0;
+
+                        .breadArea {
+
+                        }
+
+                        .checkboxMainArea {
+                            overflow: auto;
+                            margin-top: 20px;
+                            height: 370px;
+
+                            // 滚动条样式
+                            &::-webkit-scrollbar {
+                                width: 6px;
+                                height: 10px;
+                            }
+                            &::-webkit-scrollbar-track {
+                                background: #eef2fe;
+                                border-radius: 0px;
+                            }
+                            &::-webkit-scrollbar-thumb {
+                                background: #b3b3b3;
+                                border-radius: 0px;
+                            }
+                            &::-webkit-scrollbar-thumb:hover {
+                                background: #b3b3b3;
+                            }
+                            &::-webkit-scrollbar-corner {
+                                background: #b3b3b3;
+                            }
+
+                            .noData {
+                                font-size: 14px;
+                                color: #999;
+                                text-align: center;
+                                margin-top: 150px;
+                            }
+
+                            .checkboxItemArea {
+                                display: flex;
+                                align-items: center;
+                                margin-bottom: 15px;
+
+                                .orgArea {
+                                    width: 20px;
+                                }
+
+                                .nameArea {
+                                    flex: 1;
+                                    @extend .text-ellipsis;
+                                    padding: 0 15px;
+                                }
+
+                                .nextArea {
+                                    display: flex;
+                                    align-items: center;
+                                    cursor: pointer;
+                                    margin-right: 10px;
+                                }
+
+                                .userItemOuterArea {
+                                    display: inline-block;
+
+                                    .userItemArea {
+                                        display: flex;
+                                        align-items: center;
+                                        margin-left: 5px;
+
+                                        .avatarArea {
+                                            width: 40px;
+                                        }
+
+                                        .userArea {
+                                            padding: 0 10px 0 5px;
+                                            text-align: left;
+                                        }
+                                    }
+                                }
+                                
+                            }
+                        }
+                    }
+                }
+
+                .hasSelectItemArea {
+                    display: flex;
+                    align-items: center;
+                    margin-top: 15px;
+                    padding: 0 15px;
+
+                    .avatarArea {
+                        width: 40px;
+                    }
+
+                    .userArea {
+                        padding: 0 15px;
+                        text-align: left;
+                        flex: 1;
+                        @extend .text-ellipsis;
+                    }
+
+                    .handleArea {
+                        width: 20px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+        &:last-child {
+
+            .selectBorderOuterArea {
+                padding-right: 0;
+            }
+        }
+    }
+}
+
+.bottomHandleArea {
+    margin: 15px 15px 0 0;
+
+    .handleArea {
+        text-align: right;
+
+        .btnItemArea {
+            width: 120px;
+            height: 48px;
+        }
+    }
+}
+
+
+.appFormArea {
+
+    .inputPoint {
+        cursor: pointer;
+    }
+}
+
+
+.text-ellipsis {
+    width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}

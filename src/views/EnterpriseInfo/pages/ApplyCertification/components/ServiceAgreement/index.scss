@@ -1,0 +1,113 @@
+.service-agreement-page {
+  pointer-events: all;
+  width: 815px;
+  height: 590px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #fff;
+
+  .header-box {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    color: #2b2b2b;
+    border-bottom: 1px solid #e6e6e6;
+    padding: 0 20px;
+  }
+
+  .text-container {
+    flex: 1;
+    height: 400px;
+    overflow-y: scroll;
+    font-size: 14px;
+    color: #666;
+    padding: 24px;
+    padding-left: 38px;
+    margin: 30px 8px 0 0;
+
+    .service-agreement-title {
+      width: 100%;
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      font-size: 18px;
+      color: #666;
+      h1 {
+        font-size: 22px;
+        color: #2b2b2b;
+        font-weight: 800;
+        margin-bottom: 20px;
+      }
+    }
+
+    .chapter-wrap {
+      h1 {
+        font-size: 16px;
+        font-weight: 700;
+        // color: #2b2b2b;
+      }
+
+      h2 {
+        font-size: 14px;
+        font-weight: 700;
+        // color: #2b2b2b;
+      }
+
+      h3 {
+        font-size: 14px;
+        font-weight: 700;
+        // color: #2b2b2b;
+      }
+      .bold-text {
+        font-size: 14px;
+        font-weight: 700;
+        color: #2b2b2b;
+      }
+    }
+
+    &::-webkit-scrollbar {
+      width: 6px;
+      height: 10px;
+      /**/
+    }
+    &::-webkit-scrollbar-track {
+      background: #eef2fe;
+      border-radius: 0px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: #245ff2;
+      border-radius: 0px;
+    }
+    &::-webkit-scrollbar-thumb:hover {
+      background: #245ff2;
+    }
+    &::-webkit-scrollbar-corner {
+      background: #179a16;
+    }
+  }
+
+  .btn-box {
+    width: 100%;
+    height: 88px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .cus-btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 48px;
+      padding: 18px 32px;
+      font-size: 14px;
+      // margin-right: 120px;
+    }
+  }
+}

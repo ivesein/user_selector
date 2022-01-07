@@ -1,0 +1,51 @@
+.avatarNameWarp {
+	// width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	font-size: 14px;
+	color: #2b2b2b;
+
+	.avatar {
+		width: 40px;
+		height: 40px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: #245ff2;
+		border-radius: 100%;
+		margin-right: 8px;
+		flex-shrink: 0;
+
+		.avatarImg {
+			width: 40px;
+			border-radius: 100%;
+			// width: 100%;
+			// height: 32px;
+		}
+
+		.nicknameone {
+			color: #fff;
+		}
+	}
+	.nickname {
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+
+	.tag {
+		width: 58px;
+		height: 24px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-shrink: 0;
+		border: 1px solid#c2d3fe;
+		background-color: #eff3ff;
+		font-size: 14px;
+		color: #245ff2;
+		margin-left: 10px;
+	}
+}

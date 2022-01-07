@@ -1,0 +1,29 @@
+.disableMain {
+    height: calc(100% - 120px);
+    background-color: #fff;
+    padding: 0 24px;
+    font-size: 14px;
+
+    img {
+        margin: 0 auto;
+        display: block;
+        padding-top: 215px;
+    }
+
+    >span {
+        color: #999;
+        margin-top: 18px;
+        text-align: center;
+        display: block;
+    }
+
+    button {
+        width: 104px;
+        height: 40px;
+        background-color: #ffffff;
+        border: solid 1px #e6e6e6;
+        color: #2b2b2b;
+        display: block;
+        margin: 24px auto 0;
+    }
+}

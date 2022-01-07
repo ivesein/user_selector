@@ -1,0 +1,272 @@
+﻿.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    overflow: auto;
+    padding: 24px;
+    height: 100%;
+
+    // 公共
+    .company {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .left {
+        width: 55%;
+
+        .top {
+            background-color: #fff;
+            padding: 24px;
+            font-size: 14px;
+            border-radius: 2px;
+
+            .name {
+                font-size: 24px;
+                color: #2b2b2b;
+                font-family: Source Han Sans CN;
+                display: block;
+                padding-bottom: 16px;
+            }
+
+            .certify {
+                color: #245ff2;
+                margin-left: 8px;
+            }
+        }
+
+        .middle {
+            background-color: #fff;
+            margin-top: 24px;
+            padding: 24px;
+            border-radius: 2px;
+
+            :global {
+                .ant-divider-horizontal {
+                    margin: 20px 0;
+                }
+            }
+
+            .number {
+                display: flex;
+                flex-wrap: wrap;
+
+                .one {
+                    width: 33%;
+                    margin-bottom: 24px;
+
+                    span {
+                        display: block;
+                    }
+
+                    :nth-child(1) {
+                        font-size: 14px;
+                        color: #999;
+                        padding-bottom: 16px;
+                    }
+
+                    :nth-child(2) {
+                        font-size: 24px;
+                        color: #2b2b2b;
+                    }
+                }
+            }
+
+            /* 解决图表大小随着窗口大小动态变化的样式问题 */
+            .personChart {
+                width: 100%;
+                height: 300px;
+                margin-top: 10px;
+
+                >div:nth-child(1) {
+                    width: 100% !important;
+                }
+
+                >div:nth-child(1)>canvas {
+                    width: 100% !important;
+                }
+            }
+
+            .visit {
+                margin: 40px 0;
+                height: 90px;
+
+                .self {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: baseline;
+
+                    >div {
+                        width: 32%;
+                        height: 50px;
+                        background-color: #f7f7f7;
+                        padding: 18px 20px;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: baseline;
+                        margin: 24px 0 0 0;
+
+                        span {
+                            font-size: 14px;
+                            color: #2b2b2b;
+                        }
+
+                        :nth-child(2) {
+                            color: #245ff2;
+                        }
+                    }
+                }
+            }
+        }
+
+        .bottom {
+            margin-top: 36px;
+
+            >span:nth-child(1) {
+                font-size: 14px;
+                color: #b4b4b4;
+                margin-bottom: 16px;
+                display: block;
+            }
+
+            .company img:nth-of-type(2) {
+                margin-left: 16px;
+            }
+
+            img {
+                width: 40px;
+            }
+
+            Button {
+                width: 120px;
+                height: 40px;
+                background-color: #245ff2;
+                border-radius: 4px;
+                color: #ffffff;
+            }
+        }
+
+    }
+
+    .right {
+        flex: 1;
+        margin-left: 24px;
+
+        .equity {
+            padding: 24px 24px 16px 24px;
+            font-family: Source Han Sans CN;
+            font-size: 14px;
+            color: #2b2b2b;
+            background-color: #fff;
+            margin-bottom: 24px;
+            border-radius: 2px;
+
+            >span:nth-child(1) {
+                font-size: 16px;
+            }
+
+            .box {
+                padding: 32px 0px 20px 0;
+
+                p {
+                    display: inline-block;
+                }
+
+                span {
+                    display: block;
+                }
+
+                span:nth-of-type(1) {
+                    color: #999;
+                }
+
+                span:nth-of-type(2) {
+                    font-size: 24px;
+                    color: #245ff2;
+                    margin: 16px 0 12px 0;
+                }
+
+                span:nth-of-type(3) {
+                    color: #666;
+                }
+            }
+
+            .entry {
+                display: flex;
+                flex-wrap: wrap;
+                margin-top: 24px;
+                height: 130px;
+                overflow: auto;
+
+                .card {
+                    width: 30%;
+                    height: 48px;
+                    background-color: #f7f7f7;
+                    border-radius: 4px;
+                    padding: 16px;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    margin: 0 16px 16px 0;
+                    cursor: pointer;
+
+                    span {
+                        margin-left: 16px;
+                    }
+                }
+            }
+        }
+
+        .news {
+            background: #fff;
+            padding: 24px;
+            font-size: 14px;
+            color: #2b2b2b;
+            border-radius: 2px;
+            height: 490px;
+
+            .latest {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                >span:nth-child(1) {
+                    font-size: 16px;
+                }
+
+                >span:nth-child(2) {
+                    color: #999;
+                    cursor: pointer;
+                }
+            }
+
+            .list {
+                margin-top: 24px;
+                overflow: auto;
+                height: 405px;
+
+                .operation {
+                    line-height: 28px;
+                    color: #666;
+                    margin-bottom: 12px;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    display: block;
+                }
+
+                img {
+                    margin: 110px auto 0;
+                    display: block;
+                }
+
+                .none {
+                    text-align: center;
+                    display: block;
+                    color: #999;
+                }
+            }
+        }
+    }
+}

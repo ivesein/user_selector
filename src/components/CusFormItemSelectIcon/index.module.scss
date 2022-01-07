@@ -1,0 +1,29 @@
+.iconsWrap {
+	width: 100%;
+	display: flex;
+	height: 50px;
+	flex-wrap: wrap;
+	flex-shrink: 0;
+	overflow-y: auto;
+	.iconItem {
+		width: 48px;
+		height: 48px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-shrink: 0;
+		background-color: #fff;
+		cursor: pointer;
+		&:hover {
+			background-color: #eef2fe;
+		}
+		img {
+			width: 16px;
+			height: 16px;
+		}
+	}
+
+	.iconItemActive {
+		background-color: #eef2fe;
+	}
+}

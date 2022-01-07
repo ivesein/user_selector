@@ -1,0 +1,123 @@
+.detailTimeline {
+    
+    .ant-timeline-item-content {
+        top: -14px;
+    }
+}
+
+.selectBread {
+
+    span {
+        color: #999999;
+        
+        .active {
+            color: #245ff2;
+            cursor: default;
+        }
+        
+        .noActive {
+            cursor: pointer;
+        }
+    }
+    
+}
+
+.checkboxMainArea {
+
+    .ant-checkbox-wrapper {
+        display: flex;
+        align-items: center;
+    }
+}
+
+
+.handleDropArea {
+    
+    .ant-dropdown-menu-item, 
+    .ant-dropdown-menu-submenu-title {
+        padding: 0;
+    }
+}
+
+.appFormArea {
+
+    .ant-radio-group {
+        width: 100%;
+
+        .ant-radio-wrapper {
+            width: 100%;
+            margin-bottom: 10px;
+
+            & > span:nth-child(2) {
+                position: relative;
+                width: 560px;
+                display: inline-block;
+
+                .leftArea {
+                    width: 200px !important;
+                    @extend .text-ellipsis;
+                }
+
+                .rightArea {
+                    position: absolute;
+                    right: 20px;
+                    top: 0;
+                    width: 300px !important;
+                    @extend .text-ellipsis;
+                    display: inline-block;
+                    text-align: right;
+                    color: #999;
+                }
+
+            }
+
+                
+        }
+    }
+}
+
+.selectTreeArea.ant-tree {
+
+    .ant-tree-treenode {
+        align-items: center;
+        height: 40px;
+
+        .ant-tree-switcher {
+            display: flex;
+            align-items: center;
+        }
+
+        .ant-tree-checkbox {
+            margin: 0 8px 0 0;
+
+            .ant-tree-checkbox-inner {
+                width: 20px;
+                height: 20px;
+            }
+        }
+
+        .ant-tree-checkbox-checked .ant-tree-checkbox-inner::after {
+            left: 30%;
+        }
+
+        .ant-tree-node-content-wrapper {
+            display: flex;
+            align-items: center;
+    
+            .ant-tree-iconEle {
+                height: 18px;
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+
+    
+}
+
+.text-ellipsis {
+    width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}

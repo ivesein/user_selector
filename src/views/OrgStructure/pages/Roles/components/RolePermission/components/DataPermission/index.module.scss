@@ -1,0 +1,31 @@
+.dataPermission {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	flex-shrink: 0;
+	align-items: stretch;
+	padding-top: 30px;
+	overflow: hidden;
+
+	.item {
+		width: 100%;
+		display: flex;
+		justify-content: flex-start;
+		align-items: flex-start;
+		margin-bottom: 20px;
+		.itemLabel {
+			font-size: 14px;
+			color: #666666;
+			margin-top: 5px;
+			padding-right: 36px;
+		}
+		.itemFeild {
+			flex: 1;
+		}
+		&:last-of-type {
+			margin-bottom: 5px;
+		}
+	}
+}

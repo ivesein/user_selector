@@ -1,0 +1,57 @@
+.memberInfoWrap {
+	display: flex;
+	width: 100%;
+	flex: 1;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: stretch;
+	flex-shrink: 0;
+	overflow: hidden;
+
+	.titleWrap {
+		width: 100%;
+		height: 76px;
+		display: flex;
+		flex-shrink: 0;
+		justify-content: space-between;
+		align-items: center;
+
+		.filterSelectWrap {
+			.title {
+				font-size: 14px;
+				color: #b4b4b4;
+			}
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+			width: 200px;
+			height: 40px;
+			flex-shrink: 0;
+			border: 1px solid rgba(51, 51, 51, 0.1);
+			padding-left: 10px;
+		}
+	}
+
+	.tableWrap {
+		display: flex;
+		width: 100%;
+		flex: 1;
+		flex-shrink: 0;
+	}
+
+	.AvatarOrNameCell {
+		width: 100%;
+		height: 100%;
+		padding: 0;
+	}
+
+	.paginationWrap {
+		display: flex;
+		width: 100%;
+		height: 56px;
+		flex-shrink: 0;
+		justify-content: flex-end;
+		align-items: center;
+		padding: 0 20px;
+	}
+}
