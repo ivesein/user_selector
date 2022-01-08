@@ -1,0 +1,33 @@
+.cusSearchWrap {
+	// position: relative;
+	width: 100%;
+	height: 40px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-shrink: 0;
+
+	.cusinput {
+		flex: 1;
+		font-size: 14px;
+		height: 40px;
+		// padding-right: 50px;
+	}
+	.searchIconwrap {
+		// position: absolute;
+		width: 48px;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		top: 0;
+		right: 0;
+		background-color: #eef2fe;
+		cursor: pointer;
+
+		.searchIcon {
+			width: 25px;
+			// height: 26px;
+		}
+	}
+}

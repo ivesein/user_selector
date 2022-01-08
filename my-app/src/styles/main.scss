@@ -1,0 +1,47 @@
+@import "./reset.scss";
+@import "./variable.scss";
+
+#root {
+	width: 100%;
+	height: 100vh;
+	background-color: #fff;
+	// overflow: hidden;
+	// background-image: url(https://gw.alipayobjects.com/zos/rmsportal/TVYTbAXWheQpRcWDaDMu.svg);
+	// background-repeat: no-repeat;
+	// background-size: 100% 100%;
+}
+
+.App {
+	width: 100%;
+	height: 100vh;
+}
+
+:root {
+	--animate-duration: 400ms !important;
+
+	// --animate-delay: 0.5s !important;
+}
+
+.cus-btn-48 {
+	min-width: 120px;
+	height: 48px;
+	font-size: 14px;
+}
+
+.init-loading {
+	position: fixed;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 1999;
+	text-align: center;
+	padding-top: 180px;
+	top: 65px;
+	background-color: rgba(238, 242, 254, 0.3);
+}
+
+#nodePopover {
+	.ant-popover-inner-content {
+		padding: 0;
+	}
+}
