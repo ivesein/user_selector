@@ -11,6 +11,8 @@ function App() {
   }
   const handleOk = (params) => {
     setIsModalVisible(false)
+    const res=selectRef.current.getResult()
+    console.log("res>>>>",res);
   }
   const handleCancel = (params) => {
     setIsModalVisible(false)
@@ -375,9 +377,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        
         <Button style={{margin:100}} onClick={handleClick} type="primary">ok</Button>
-        
       </header>
       <Modal
         // width={"auto"}
@@ -391,7 +391,6 @@ function App() {
         destroyOnClose={true}
       >
         <UserSelect 
-            initKeys={[]}   //initKey:初始选中的keys。用于回填数据
             ref={selectRef}
             showType={"0"}  //showType:展示模式   "0":默认模式，内部外部组织同时展示  "1":只展示内部组织   "2":只展示外部组织    
             exteriorType={"1"}  // exteriorType:外部组织类型    "0":默认展示外部企业协同组织   "1":外部项目协同组织  
